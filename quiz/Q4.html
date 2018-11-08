@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+    	function printStars() {
+    		document.getElementById("result").innerHTML = '';
+            var limit = document.getElementById("limit").value;
+            for (var i = limit; i >= 1; i--) {
+            	var result = "";
+                for (var j = i; j >= 1; j--) {
+                result += "*"
+}
+document.getElementById("result").insertAdjacentHTML('afterend', result+'<br>')
+}
+}
+    </script>
+</head>
+<body>
+	<p>Enter the number of lines <input type="number" id="limit" min="0"  /> <button onclick="printStars()">Print Stars</button>
+        <div id="result"></div>
+</body>
+</html>
